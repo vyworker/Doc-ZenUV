@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Installation and Update - Zen UV 4.0 for Blender</title>
+    <title>Installation and Update - Zen UV 4.2 for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -24,6 +24,14 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XHJ910WF8"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7XHJ910WF8');
+      </script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -32,7 +40,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Zen UV 4.0 for Blender
+          <a href=".." class="icon icon-home"> Zen UV 4.2 for Blender
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -41,16 +49,13 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../zenuv3_to_zenuv4/">Upgrade Zen UV 3 to Zen UV 4 FAQ</a>
-                </li>
-              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation and Update</a>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../zenuv3_to_zenuv4/">Upgrade Zen UV 3 to Zen UV 4 FAQ</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation and Update</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
     </li>
@@ -68,84 +73,71 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zen-relax-application-validity-check">Zen Relax Application Validity Check</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#validation-check-windows">Validation Check (Windows)</a>
+    </li>
+        </ul>
+    </li>
     </ul>
-                </li>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_interface/">User Interface</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../checker/">UV Checker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../transform_tool/">Transform Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Trim Sheets</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet/">Trim Sheets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_creation/">Trim Sheet Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_operators/">Trim Sheet Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_hotspot/">Hotspot Mapping</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Additional</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../pack/">Pack</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_script/">User Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -154,19 +146,20 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Zen UV 4.0 for Blender</a>
+          <a href="..">Zen UV 4.2 for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Installation and Update</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Getting Started &raquo;</li>
+      <li>Installation and Update</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
@@ -179,14 +172,14 @@
 <li>Select Zen UV.zip.</li>
 <li>Press <strong>Install Add-on</strong>.</li>
 <li>Enable Zen UV add-on using checkbox and restart Blender. </li>
-<li>Done! Let&rsquo;s go further and <a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>install Zen UV Core Library</strong></a> to enable <a href="https://zen-masters.github.io/Zen-UV/stack/#stack"><strong>Stack</strong></a> feature!  </li>
+<li>Done! Let&rsquo;s go further and <a href="./#zen-uv-core-library-installation"><strong>install Zen UV Core Library</strong></a> to enable <a href="../stack/#stack"><strong>Stack</strong></a> feature!  </li>
 </ol>
 <p><img alt="" src="../img/screen/installation/installation.png" />
 <img alt="" src="../img/screen/installation/installation_enable.png" /></p>
 <h2 id="zen-uv-core-library-installation">Zen UV Core Library Installation<a class="headerlink" href="#zen-uv-core-library-installation" title="Permanent link"></a></h2>
 <div class="admonition library">
 <p class="admonition-title">Library</p>
-<p>Zen UV Core library is an additional library of the Zen UV add-on to get the fastest computations (<a href="https://zen-masters.github.io/Zen-UV/stack/#stack">Stack</a> algorithm) in C++ which is impossible to be implemented in Python. It is distributed separately from the add-on as it is licensed differently from the GPL (Apache License 2.0). Zen UV Core library does not collect or send any data. It does not use any network connections: either internet or local. It is supported on Windows, Mac OS 11 (M1 CPU Universal app only), and Linux platforms.</p>
+<p>Zen UV Core library is an additional library of the Zen UV add-on to get the fastest computations (<a href="../stack/#stack">Stack</a> algorithm) in C++ which is impossible to be implemented in Python. It is distributed separately from the add-on as it is licensed differently from the GPL (Apache License 2.0). Zen UV Core library does not collect or send any data. It does not use any network connections: either internet or local. It is supported on Windows, Mac OS 11 (M1 CPU Universal app only), and Linux platforms.</p>
 </div>
 <ol>
 <li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
@@ -234,14 +227,14 @@
 <li>Press <strong>Update Zen UV</strong>.</li>
 <li>Select new version Zen UV.zip.</li>
 <li>Press <strong>Update Zen UV</strong> and restart Blender.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
+<li><a href="./#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
 <li>Done!</li>
 </ol>
 <p><img alt="" src="../img/screen/installation/installation_update.png" /></p>
 <h3 id="manual-update">Manual Update<a class="headerlink" href="#manual-update" title="Permanent link"></a></h3>
 <div class="admonition manual">
 <p class="admonition-title">Manual</p>
-<p>Use this update method if for some reason you need to update the add-on using Blender&rsquo;s standard method. In all other cases, we recommend using <a href="https://zen-masters.github.io/Zen-UV/installation/#update"><strong>Zen UV Update</strong></a>. </p>
+<p>Use this update method if for some reason you need to update the add-on using Blender&rsquo;s standard method. In all other cases, we recommend using <a href="./#update"><strong>Zen UV Update</strong></a>. </p>
 </div>
 <ol>
 <li>Go to <strong>Preferences</strong> -&gt; <strong>Add-ons</strong>.</li>
@@ -251,7 +244,7 @@
 <li>Press <strong>Install</strong>.</li>
 <li>Select new version Zen UV.zip.</li>
 <li>Press <strong>Install Add-on</strong> and restart Blender.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/installation/#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
+<li><a href="./#zen-uv-core-library-installation"><strong>Install Zen UV Core Library</strong></a>.</li>
 <li>Done!</li>
 </ol>
 <p><img alt="" src="../img/screen/installation/installation_manual_update_1.png" />
@@ -260,15 +253,40 @@
 <ol>
 <li>Go to Blender add-ons folder. (C:\Users\Sergey\AppData\Roaming\Blender Foundation\Blender\3.2\scripts\addons).</li>
 <li>Delete Zen UV folder manually.</li>
-<li><a href="https://zen-masters.github.io/Zen-UV/installation/#installation"><strong>Install Zen UV add-on</strong></a>.</li>
+<li><a href="./#installation"><strong>Install Zen UV add-on</strong></a>.</li>
 <li>Done!</li>
 </ol>
+<h2 id="zen-relax-application-validity-check"><a href="../transform/#relax">Zen Relax Application</a> Validity Check<a class="headerlink" href="#zen-relax-application-validity-check" title="Permanent link"></a></h2>
+<p>The validity and correctness of Zen Relax application data file is essential to be working without errors.</p>
+<ol>
+<li>
+<p>Open file <code>crc.md5</code> with any text editor
+<img alt="" src="../img/screen/installation/relax_crc.png" /></p>
+</li>
+<li>
+<p>Pay attention to the present checksum values
+<strong>Example:</strong></p>
+</li>
+</ol>
+<pre><code>950a6ed131b4cc48a8978a451a09e13d *ZenRelax_linux_64_v1_0_0
+a3aa5cd73d4f1f7fcd1c62ec9147dc2c *ZenRelax_mac_intel_64_v1_0_0
+f5c0c064ba189f02a05ea62c7e3c04f4 *ZenRelax_mac_silicon_64_v1_0_0
+a195e82d9dbebefa5193d3409ed61cd4 *ZenRelax_win_64_v1_0_0.exe
+</code></pre>
+<ol>
+<li>Compare the checksum of Relax application on your system with the checksum given in <code>crc.md5</code> file</li>
+</ol>
+<h3 id="validation-check-windows">Validation Check (Windows)<a class="headerlink" href="#validation-check-windows" title="Permanent link"></a></h3>
+<p>Validate checksum with <code>certutil</code> command</p>
+<pre><code class="language-batch">certutil -hashfile &quot;c:\Users\&lt;UserName&gt;\AppData\Roaming\Blender Foundation\Blender\3.3\scripts\addons\ZenUV\utils\clib\ZenRelax_win_64_v1_0_0.exe&quot; MD5
+</code></pre>
+<p><img alt="" src="../img/screen/installation/crc_check.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../zenuv3_to_zenuv4/" class="btn btn-neutral float-left" title="Upgrade Zen UV 3 to Zen UV 4 FAQ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../pie-menu/" class="btn btn-neutral float-right" title="Pie Menu">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../user_interface/" class="btn btn-neutral float-right" title="User Interface">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -294,7 +312,7 @@
       <span><a href="../zenuv3_to_zenuv4/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../pie-menu/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../user_interface/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

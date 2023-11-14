@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Pack - Zen UV 4.0 for Blender</title>
+    <title>Pack - Zen UV 4.2 for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -24,6 +24,14 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XHJ910WF8"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7XHJ910WF8');
+      </script>
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -32,7 +40,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Zen UV 4.0 for Blender
+          <a href=".." class="icon icon-home"> Zen UV 4.2 for Blender
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -41,40 +49,28 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../zenuv3_to_zenuv4/">Upgrade Zen UV 3 to Zen UV 4 FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_interface/">User Interface</a>
+                  </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../zenuv3_to_zenuv4/">Upgrade Zen UV 3 to Zen UV 4 FAQ</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation and Update</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../pie-menu/">Pie Menu</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
-                </li>
-              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Pack</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../adv_uv-maps/">Advanced UV Maps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../seam_groups/">Seam Groups</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../unwrap/">Unwrap</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../select/">Select</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Pack</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#pack-islands">Pack Islands</a>
     </li>
@@ -93,6 +89,10 @@
     <li class="toctree-l4"><a class="reference internal" href="#average-islands-scale">Average Islands Scale</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#rotate-islands">Rotate Islands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack-selected-islands">Pack Selected Islands</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pack-in-trim">Pack in Trim</a>
     </li>
         </ul>
     </li>
@@ -117,59 +117,49 @@
         </ul>
     </li>
     </ul>
-                </li>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../checker/">UV Checker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../transform_tool/">Transform Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Trim Sheets</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../checker/">Checker Map</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet/">Trim Sheets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_creation/">Trim Sheet Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_operators/">Trim Sheet Operators</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimsheet_hotspot/">Hotspot Mapping</a>
+                  </li>
               </ul>
+              <p class="caption"><span class="caption-text">Additional</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../texel_density/">Texel Density</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../transform/">Transform</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../stack/">Stack</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../sticky_uv_editor/">Sticky UV Editor</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../addon_prefs/">Addon Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_script/">User Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../changelg/">Changelog</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../our_addons/">Our Add-ons</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -178,19 +168,20 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Zen UV 4.0 for Blender</a>
+          <a href="..">Zen UV 4.2 for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Pack</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Modules &raquo;</li>
+      <li>Pack</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
@@ -200,7 +191,7 @@
 <p><img alt="Pack" src="../img/screen/pack/pack_main_panel.png" /></p>
 </div>
 <h3 id="pack-islands">Pack Islands<a class="headerlink" href="#pack-islands" title="Permanent link"></a></h3>
-<p>Pack all Islands using selected <a href="https://zen-masters.github.io/Zen-UV/pack/#pack-engine"><strong>Pack Engine</strong></a>.</p>
+<p>Pack all Islands using selected <a href="./#pack-engine"><strong>Pack Engine</strong></a>.</p>
 <h3 id="margin">Margin<a class="headerlink" href="#margin" title="Permanent link"></a></h3>
 <p>Set space between Islands for Pack Islands operation. </p>
 <p><img alt="Pack_Margin" src="../img/gifs/pack_operators/Pack_Margin.gif" /></p>
@@ -218,8 +209,8 @@
 </ul>
 </div>
 <h3 id="uv-coverage">UV Coverage<a class="headerlink" href="#uv-coverage" title="Permanent link"></a></h3>
-<p>Calculate Islands UV Coverage for active UV map. Increasing UV Coverage value leads to the increasing <a href="https://zen-masters.github.io/Zen-UV/texel_density/">Texel Density</a> value, this in turn leads to the more efficient UV space usage and you can see more pixels on your model using the same texture.</p>
-<p>The algotythm calculates total UV Islands area and shows the percentage in relation to the UV space. It can lead to the values more than 100% if you have Stacked Islands.</p>
+<p>Calculate Islands UV Coverage for active UV map. Increasing UV Coverage value leads to the increasing <a href="../texel_density/">Texel Density</a> value, this in turn leads to the more efficient UV space usage and you can see more pixels on your model using the same texture.</p>
+<p>The algorithm calculates total UV Islands area and shows the percentage in relation to the UV space. It can lead to the values more than 100% if you have Stacked Islands.</p>
 <p><img alt="" src="../img/gifs/pack_operators/Pack_UV_Coverage.gif" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -247,13 +238,18 @@
 <p>The main preferences of each Pack Engine are placed in Zen UV interface. To use all the preferences please go to the main interface of the engine (UV Packer, UV Packmaster). </p>
 <p>Below we described General preferences for all Pack Engines. If you want to obtain information about Specific preferences for some engine, please refer to the documentation of the corresponding engine.</p>
 <h4 id="texture-size">Texture Size<a class="headerlink" href="#texture-size" title="Permanent link"></a></h4>
-<p>Texture Size preset, works in pair with <a href="https://zen-masters.github.io/Zen-UV/pack/#margin"><strong>Margin</strong></a>.</p>
+<p>Texture Size preset, works in pair with <a href="./#margin"><strong>Margin</strong></a>.</p>
 <h4 id="average-islands-scale">Average Islands Scale<a class="headerlink" href="#average-islands-scale" title="Permanent link"></a></h4>
 <p>Average Islands Scale before Pack Islands operation.</p>
 <p><img alt="Pack_Average_Scale" src="../img/gifs/pack_operators/Pack_Average_Scale.gif" /></p>
 <h4 id="rotate-islands">Rotate Islands<a class="headerlink" href="#rotate-islands" title="Permanent link"></a></h4>
 <p>Allow Pack Engine rotate Islands.</p>
 <p><img alt="Pack_Rotate_Islands" src="../img/gifs/pack_operators/Pack_Rotate_Islands.gif" /></p>
+<h4 id="pack-selected-islands">Pack Selected Islands<a class="headerlink" href="#pack-selected-islands" title="Permanent link"></a></h4>
+<p>Pack only Selected Islands. Doesn&rsquo;t work for UV-Packer Pack Engine.</p>
+<h4 id="pack-in-trim">Pack in Trim<a class="headerlink" href="#pack-in-trim" title="Permanent link"></a></h4>
+<p>Pack Islands into Trim. Works only for UV Packmaster Pack Engine.</p>
+<p><img alt="Pack_In_Trim" src="../img/screen/pack/pack_in_trim.gif" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>UV Packmaster Pack Engine</strong> has super useful option <strong>Lock Overlapping.</strong> It&rsquo;s recommended to be used to Pack Stacked and Overlapping Islands. If you don&rsquo;t have UV Packmaster installed, but still want to Pack Stacked and Overlapping Islands <a href="https://youtu.be/krsVbEi32DM"><strong>watch this video</strong></a>.</p>
@@ -312,7 +308,7 @@
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../select/" class="btn btn-neutral float-left" title="Select"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../checker/" class="btn btn-neutral float-right" title="Checker Map">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../checker/" class="btn btn-neutral float-right" title="UV Checker">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
